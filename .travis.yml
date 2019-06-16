@@ -7,6 +7,8 @@
 # reference: https://docs.travis-ci.com/user/customizing-the-build
 
 language: node_js
+node_js:
+  - "10"
 
 install:
   # Install test dependencies.
@@ -15,7 +17,7 @@ install:
 
 script:
   # Do the tests.
-  sass-lint src/*
+  sass-lint src/
 
 notifications:
   email:
