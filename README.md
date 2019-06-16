@@ -53,7 +53,7 @@ You can get started with using the CDN option. Just add the below code to your
 
 ```
 <!-- Use Style-Cheat CSS -->
-<link rel="stylesheet" href="TODO: https://cdn.jsdelivr.net/gh/style-cheat/css/dist/style-cheat.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css/dist/style-cheat.css" />
 ```
 
 ### Download the release
