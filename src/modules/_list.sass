@@ -1,0 +1,37 @@
+// Variables for list
+
+// Components for list
+ul,
+ol,
+dl
+  margin-bottom: 1rem
+  margin-top: 0
+
+  &> ul,
+  ol,
+  dl
+    margin-bottom: 0
+
+dt
+  font-weight: bold
+
+dd
+  margin-left: 1rem
+
+.list-unstyled
+  list-style-type: none
+  padding-left: 0
+
+.list-inline
+  @extend .list-unstyled
+
+  > li
+    display: inline-block
+
+// Media Query Break Points
+// Large Phones
+@media only screen and (min-width: $sm)
+// Tablets
+@media only screen and (min-width: $md)
+// Notebooks and Desktops
+@media only screen and (min-width: $lg)

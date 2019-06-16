@@ -1,0 +1,7 @@
+---
+rules:
+  placeholder-in-extend: false
+  no-qualifying-elements:
+    allow-element-with-attribute: true
+  force-pseudo-nesting: false
+  force-attribute-nesting: false

@@ -1,0 +1,23 @@
+// Variables for quote
+
+// Components for quote
+blockquote
+  border-left-color: $gray
+  border-left-style: solid
+  border-left-width: .3rem
+  margin: 0
+  padding-bottom: .2rem
+  padding-left: 1rem
+  padding-top: .2rem
+
+  footer
+    &::before
+      content: '- '
+
+// Media Query Break Points
+// Large Phones
+@media only screen and (min-width: $sm)
+// Tablets
+@media only screen and (min-width: $md)
+// Notebooks and Desktops
+@media only screen and (min-width: $lg)

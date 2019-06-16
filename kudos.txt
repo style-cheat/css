@@ -1,0 +1,24 @@
+# name: kudos.txt
+# description: This file shows the named contributors.
+# author: style-cheat.io
+# contact: hello@style-cheat.io
+# license: BSD-3-Clause
+# reference: https://github.com/kudos-txt
+
+project:
+  - name: style-cheat.io
+    site: https://style-cheat.io
+    mail: hello@style-cheat.io
+
+contributors:
+  - name: daniel-wtd
+    mail: daniel@while-true-do.io
+    role: Founder / Owner
+    site: https://while-true-do.io
+
+partners:
+  - name: while-true-do.io
+    site: https://while-true-do.io
+
+  - name: kudos.txt
+    site: https://kudos-txt.io

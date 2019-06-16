@@ -1,0 +1,46 @@
+// Variables for table
+
+// Components for table
+
+.table
+  background-color: transparent
+  border-collapse: collapse
+  margin-bottom: 1rem
+  max-width: 100%
+  width: 100%
+
+  thead
+    th
+      border-bottom-color: $light
+      border-bottom-style: solid
+      border-bottom-width: 1px
+      border-top-width: 1px
+
+  th,
+  td
+    border-top-color: $light
+    border-top-style: solid
+    border-top-width: 1px
+    padding: .75rem
+    text-align: inherit
+
+.table-striped
+  thead
+    background-color: $light
+
+  tr
+    &:nth-child(even)
+      background-color: $light
+
+.table-scrollable
+  margin: 0
+  overflow-y: auto
+  width: 100%
+
+// Media Query Break Points
+// Large Phones
+@media only screen and (min-width: $sm)
+// Tablets
+@media only screen and (min-width: $md)
+// Notebooks and Desktops
+@media only screen and (min-width: $lg)

@@ -1,0 +1,62 @@
+// Variables for grid
+$gutter: .5rem
+
+// Components for grid
+.row
+  box-sizing: border-box
+  display: flex
+  flex: 0 1 auto
+  flex-direction: row
+  flex-wrap: wrap
+  margin-left: -.5rem
+
+.col,
+.col-xs,
+.col-sm,
+.col-md,
+.col-lg
+  box-sizing: border-box
+  flex: 1 1 100%
+  margin-bottom: $gutter
+  margin-left: $gutter
+  margin-top: $gutter
+  max-width: 100%
+
+.col-sm
+  display: none
+  visibility: collapse
+
+.col-md
+  display: none
+  visibility: collapse
+
+.col-lg
+  display: none
+  visibility: collapse
+
+.box
+  display: block
+
+// Media Query Break Points
+// Large Phones
+@media only screen and (min-width: $sm)
+  .col-sm
+    display: block
+    visibility: visible
+// Tablets
+@media only screen and (min-width: $md)
+  .col,
+  .col-xs,
+  .col-sm,
+  .col-md,
+  .col-lg
+    flex: 1 0 0
+
+  .col-md
+    display: block
+    visibility: visible
+// Notebooks and Desktops
+@media only screen and (min-width: $lg)
+  .col-lg
+    display: block
+    visibility: visible

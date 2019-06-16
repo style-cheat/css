@@ -1,0 +1,49 @@
+$button-padding: .5rem
+
+// Components for button
+.button,
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button']
+  background-color: $light
+  border-color: darken($light, 10%)
+  border-radius: .25rem
+  border-style: solid
+  border-width: 1px
+  box-sizing: border-box
+  color: $dark
+  cursor: pointer
+  display: inline-block
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+  padding-bottom: $button-padding
+  padding-left: $button-padding
+  padding-right: $button-padding
+  padding-top: $button-padding
+  text-align: center
+  text-decoration: none
+  white-space: nowrap
+
+  &.button-sm
+    font-size: smaller
+    padding-bottom: .1rem
+    padding-left: .1rem
+    padding-right: .1rem
+    padding-top: .1rem
+
+  &.button-lg
+    font-size: larger
+    padding-bottom: .75rem
+    padding-left: .75rem
+    padding-right: .75rem
+    padding-top: .75rem
+
+// Media Query Break Points
+// Large Phones
+@media only screen and (min-width: $sm)
+// Tablets
+@media only screen and (min-width: $md)
+// Notebooks and Desktops
+@media only screen and (min-width: $lg)
