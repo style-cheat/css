@@ -31,7 +31,7 @@
         don't like.
       </p>
       <p><strong>Minimalism</strong> is the second principle. "Style-Cheat CSS"
-        is only x.ykb (x.ykb gzipped), including all modules. This will result
+        is only ~5kb (&lt;2kb gzipped), including all modules. This will result
         in faster loading times of your website and a better overall performance.
       </p>
       <p><strong>Modern</strong> development is the third principle.
@@ -76,6 +76,7 @@
         <h2>Using a CDN</h2>
         <p>Using a CDN needs one line of code.</p>
         <pre><code>
+&lt;!-- Use Style-Cheat CSS --&gt;
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css/dist/style-cheat.css" /&gt;
         </code></pre>
       </section> <!-- /#usecdn -->
@@ -86,7 +87,7 @@
           project.
         </p>
         <div class="text-center">
-          <a href="TODO" class="button button-lg bg-primary">Download</a>
+          <a href="https://github.com/style-cheat/css/releases" class="button button-lg bg-primary">Download</a>
         </div>
       </section> <!-- /#download -->
     </section> <!-- /#gettingstarted -->
@@ -95,14 +96,15 @@
       <h1 class="section-heading">Modules</h1>
       <p>Discover what's included in "Style-Cheat CSS". You can use the
         pre-compiled, minified CSS File or tune "Style-Cheat CSS" to your needs.
-        The size can vary from 1.5kb (x.ykb compressed) to 4.7kb
-        (x.ykb compressed).
+        The size can vary from 1.5kb (uncompressed) to 5kb
+        (uncompressed).
       </p>
 
       <section id="base">
         <h2 class="sub-heading">Base</h2>
-        <p>The <a href="TODO">base module</a> is the only mandatory module. It provides some very
-          basic features and definitions, which may be used in other modules.
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/main/_base.sass">base module</a>
+          is the only mandatory module. It provides some very basic features and
+          definitions, which may be used in other modules.
         </p>
         <h3>System Fonts</h3>
         <p>"Style-Cheat CSS" is using System Fonts. This should ensure, that a
@@ -126,15 +128,16 @@
         </p>
         <h3>Black,Gray,White</h3>
         <p>You will find some very basic color information in the base module. To
-          be precise, you will find <code>@dark: #090509;</code>,
-          <code>@gray: #959595;</code>, <code>@light: #eef0f0;</code>. These
+          be precise, you will find <code>@dark: #313131;</code>,
+          <code>@gray: #777777;</code>, <code>@light: #e8e7e5;</code>. These
           colors are used for default backgrounds, text-colors and other contrast.
         </p>
       </section> <!-- /#base -->
 
       <section id="typography">
         <h2 class="sub-heading">Typography</h2>
-        <p>"Style-Cheat CSS" provides a <a href="TODO">typography module</a>,
+        <p>"Style-Cheat CSS" provides a
+          <a href="https://github.com/style-cheat/css/blob/master/src/modules/_typography.sass">typography module</a>,
           which is taking care of styling the text properly. All font-sizes are
           defined in <code>rem</code>, which defaults in most browser to
           <strong>16px</strong>.
@@ -172,8 +175,8 @@
 
       <section id="text">
         <h2 class="sub-heading">Text</h2>
-        <p>"Style-Cheat CSS" provides a <a href="TODO">text module</a>. This
-          module is responsible for some common text formatting.
+        <p>"Style-Cheat CSS" provides a <a href="https://github.com/style-cheat/css/blob/master/src/modules/_text.sass">text module</a>.
+          This module is responsible for some common text formatting.
         </p>
 
         <section id="text-heading">
@@ -245,7 +248,7 @@
       <section id="container">
         <h2 class="sub-heading">Container</h2>
         <p>Containers are the most basic design element in Style-Cheat. The
-          <a href="TODO">container module</a> is used for the grid or to align
+          <a href="https://github.com/style-cheat/css/blob/master/src/modules/_container.sass">container module</a> is used for the grid or to align
           your content properly.
         </p>
 
@@ -275,7 +278,7 @@
         <p>The grid allows to define areas. "Style-Cheat CSS" uses
           <a href="https://www.w3schools.com/csS/css3_flexbox.asp">CSS Flexbox</a>
           for the definition of the grid layout. The grid is defined in the
-          <a href="TODO">grid module</a>.
+          <a href="https://github.com/style-cheat/css/blob/master/src/modules/_grid.sass">grid module</a>.
         </p>
 
         <section id="grid-simple">
@@ -373,7 +376,7 @@
       <section id="button">
         <h2 class="sub-heading">Button</h2>
         <p>Buttons are essential for most websites and "Style-Cheat CSS" is
-          giving you some choice with the <a href="TODO">button module</a>.</p>
+          giving you some choice with the <a href="https://github.com/style-cheat/css/blob/master/src/modules/_button.sass">button module</a>.</p>
 
         <section id="button-default">
           <h3>Default Buttons</h3>
@@ -434,7 +437,7 @@
 
         <section id="button-colors">
           <h3>Button Colors</h3>
-          <p>The <a href="TODO">button module</a> can be combined with the
+          <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_button.sass">button module</a> can be combined with the
             <a href="#decoration">decoration module</a> to define colored
             buttons.
           </p>
@@ -497,7 +500,7 @@
 
       <section id="list">
         <h2 class="sub-heading">Lists</h2>
-        <p>The <a href="TODO">list module</a> defines all lists
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_list.sass">list module</a> defines all lists
           <code>ul,ol,dl</code> with <code>margin-top: 0</code> and
           <code>margin-bottom: 1rem</code>. Nested lists have no
           <code>margin-bottom</code>.
@@ -617,7 +620,7 @@
 
       <section id="quote">
         <h2 class="sub-heading">Quotes & Cites</h2>
-        <p>In the <a href="TODO">quote module</a> only the
+        <p>In the <a href="https://github.com/style-cheat/css/blob/master/src/modules/_quote.sass">quote module</a> only the
           <code>blockquote</code> element was touched. You will also get the
           option for a <code>footer</code>.
         </p>
@@ -639,7 +642,7 @@
       <section id="code">
         <h2 class="sub-heading">Code</h2>
         <p>"Style-Cheat CSS" includes some Code Styling in the
-          <a href="TODO">code module</a>.
+          <a href="https://github.com/style-cheat/css/blob/master/src/modules/_code.sass">code module</a>.
         </p>
         <section id="code-inline">
           <h3>Inline Code</h3>
@@ -713,7 +716,7 @@ function hello {
 
       <section id="table">
         <h2 class="sub-heading">Tables</h2>
-        <p>The <a href="TODO">table module</a> provides some opt-in classes
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_table.sass">table module</a> provides some opt-in classes
           for tables. Since tables are used for many purposes like calendars,
           widgets or even simple design elements, we've decided to not touch the
           <code>&lt;table&gt;</code> tag itself.
@@ -890,7 +893,7 @@ function hello {
 
       <section id="decoration">
         <h2 class="sub-heading">Decoration</h2>
-        <p>The <a href="TODO">decoration module</a> provides some handy classes
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_decoration.sass">decoration module</a> provides some handy classes
           to decorate your page.
         </p>
 
@@ -943,7 +946,7 @@ function hello {
         <h3>Enable / Disable Modules</h3>
         <p>If you don't want some modules, because you are having your own
           styles or they conflict with other elements, you can easily disable
-          modules in the <a href="TODO">style-cheat module</a> file.
+          modules in the <a href="https://github.com/style-cheat/css/blob/master/src/style-cheat.sass">style-cheat.sass</a> file.
         </p>
         <pre><code>
 // main
@@ -964,25 +967,31 @@ function hello {
 @import 'modules/typography';
 @import 'modules/utility';
         </code></pre>
-        TODO
         <p>After editing the file, you can use the
-          <a href="http://lesscss.org/usage/">less compiler to generate your
+          <a href="https://sass-lang.com/">sass compiler to generate your
           new style-cheat.css</a>.
         </p>
         <pre><code>
-TODO
+&lt;-- Generate CSS --&gt;
+sass src/style-cheat.sass dist/style-cheat.css
+
+&lt;-- Generate minified CSS --&gt;
+sass src/style-cheat.sass dist/style-cheat.min.css --style=compressed
         </code></pre>
       </section> <!-- /#customization-modules -->
 
       <section id="customization-module">
         <h3>Customize a Module</h3>
-        TODO
         <p>Customizing a module to your needs is easy, too. Just open the module
           file and tune it to your needs. Afterwards, you need to re-compile
-          the code with the <a href="http://lesscss.org/usage/">less compiler</a>.
+          the code with the <a href="https://sass-lang.com/">sass compiler</a>.
         </p>
         <pre><code>
-TODO
+&lt;-- Generate CSS --&gt;
+sass src/style-cheat.sass dist/style-cheat.css
+
+&lt;-- Generate minified CSS --&gt;
+sass src/style-cheat.sass dist/style-cheat.min.css --style=compressed
         </code></pre>
       </section> <!-- /#customization-module -->
     </section> <!-- /#customization -->
@@ -991,20 +1000,43 @@ TODO
       <h2 class="section-heading">Contribution</h2>
       <p>Thank you so much for considering to contribute. We are very happy, when somebody
         is joining the hard work. Please fell free to open
-        <a href="TODO">Bugs, Features Requests</a> or
-        <a href="TODO">Pull Requests</a> after reading the
-        <a href="TODO">Contribution Guideline</a>
+        <a href="https://github.com/style-cheat/css/issues">Bugs, Features Requests</a> or
+        <a href="https://github.com/style-cheat/css/pulls">Pull Requests</a> after reading the
+        <a href="https://github.com/while-true-do/doc-library/blob/master/docs/CONTRIBUTING.md">Contribution Guideline</a>
       </p>
       <p>
-        See who has contributed already in the <a href="TODO">kudos.txt</a>.
+        See who has contributed already in the <a href="https://github.com/style-cheat/css/blob/master/kudos.txt">kudos.txt</a>.
       </p>
     </section> <!-- /#contribution -->
   </main> <!-- /#main -->
 
   <footer id="footer" class="bg-primary">
     <div class="container">
-      <p>footer here</p>
-      <p>footer</p>
-    </div>
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Information</h5>
+            <p>Contact: <a href="mailto: hello@style-cheat.io">hello@style-cheat.io</a></p>
+            <p>Copyright: 2019 <a href="https://style-cheat.io">style-cheat.io</a></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Partners</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://while-true-do.io">while-true-do.io</a></li>
+              <li><a href="https://kudos-txt.io">kudos-txt.io</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- /.row -->
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <p>Made with <span class="fg-alert">♥</span> and <a href="https://style-cheat.io">Style-Cheat (CSS)</a></p>
+          </div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
   </footer> <!-- /#footer -->
 </body>
