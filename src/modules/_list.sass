@@ -8,8 +8,7 @@ dl
   margin-top: 0
 
   &> ul,
-  ol,
-  dl
+  &> ol
     margin-bottom: 0
 
 dt
@@ -20,10 +19,10 @@ dd
 
 .list-unstyled
   list-style-type: none
-  padding-left: 0
 
 .list-inline
   @extend .list-unstyled
+  padding-left: 0
 
   > li
     display: inline-block

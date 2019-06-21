@@ -17,9 +17,9 @@
 <body>
   <header id="header" role="banner" class="bg-primary">
     <section id="marque" class="container text-center">
-      <h1 class="heading-1">Style-Cheat CSS</h1>
+      <h1 class="page-heading">Style-Cheat CSS</h1>
       <p>Just another CSS Framework.</p>
-      <h1>⮉⮋⮈⮊🅐🅑</h1>
+      <img src="img/style-cheat.svg" alt="SVG mit img Tag laden" style="height: 2.5rem;" />
     </section> <!-- /#marque -->
   </header> <!-- /#header -->
 
@@ -31,7 +31,7 @@
         don't like.
       </p>
       <p><strong>Minimalism</strong> is the second principle. "Style-Cheat CSS"
-        is only ~5kb (&lt;2kb gzipped), including all modules. This will result
+        is only ~6kb (&lt;2kb gzipped), including all modules. This will result
         in faster loading times of your website and a better overall performance.
       </p>
       <p><strong>Modern</strong> development is the third principle.
@@ -47,11 +47,11 @@
 
     <section id="index" class="container">
       <h1 class="section-heading">Index</h1>
-      <ol>
+      <ul class="list-unstyled">
         <li><a href="#gettingstarted">Getting Started</a></li>
         <li><a href="#modules">Modules</a></li>
-        <ol>
-          <li><a href="base">base</a></li>
+        <ul class="list-unstyled">
+          <li><a href="#base">base</a></li>
           <li><a href="#typography">typography</a></li>
           <li><a href="#text">text</a></li>
           <li><a href="#container">container</a></li>
@@ -61,11 +61,14 @@
           <li><a href="#quote">quote</a></li>
           <li><a href="#code">code</a></li>
           <li><a href="#table">table</a></li>
+          <li><a href="#form">form</a></li>
+          <li><a href="#link">link</a></li>
           <li><a href="#decoration">decoration</a></li>
-        </ol>
-        <li><a href="#customization">customization</a></li>
-        <li><a href="#contribution">contribution</a></li>
-      </ol>
+          <li><a href="#utility">utility</a></li>
+        </ul>
+        <li><a href="#customization">Customization</a></li>
+        <li><a href="#contribution">Contribution</a></li>
+      </ul>
     </section> <!-- /#index -->
 
     <section id="gettingstarted" class="container">
@@ -319,8 +322,9 @@
         <section class="grid-viewport">
           <h3>Viewport aware Grid</h3>
           <p>I is possible to show grid columns depending on the viewport size.
-            You can change the browser window size, to this effect in the below
-            example.
+            The <a href="#utility">utility module</a> provides some classes to
+            show content dependening on the viewport size. You can change the
+            browser window size, to see this effect in the below example.
           </p>
           <pre><code>
 &lt;div class="row"&gt;
@@ -329,17 +333,17 @@
       Column always visible
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="col-sm"&gt;
+  &lt;div class="col visible-sm"&gt;
     &lt;div class="box"&gt;
       Column visible on Large Phones
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="col-md"&gt;
+  &lt;div class="col visible-md"&gt;
     &lt;div class="box"&gt;
       Column visible on Tablets
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="col-lg"&gt;
+  &lt;div class="col visible-lg"&gt;
     &lt;div class="box"&gt;
       Column visible on Desktops and Laptops
     &lt;/div&gt;
@@ -349,22 +353,22 @@
           <p><strong>Example:</strong></p>
 
           <div class="row">
-            <div class="col bg-primary">
+            <div class="col bg-info">
               <div class="box">
                 Column always visible
               </div>
             </div>
-            <div class="col-sm bg-success">
+            <div class="col visible-sm bg-success">
               <div class="box">
                 Column visible on Large Phones
               </div>
             </div>
-            <div class="col-md bg-warning">
+            <div class="col visible-md bg-warning">
               <div class="box">
                 Column visible on Tablets
               </div>
             </div>
-            <div class="col-lg bg-alert">
+            <div class="col visible-lg bg-alert">
               <div class="box">
                 Column visible on Desktops and Laptops
               </div>
@@ -390,13 +394,13 @@
 &lt;button&gt;Button&lt;/button&gt;
 
 &lt;!-- Input Button --&gt;
-&lt;input type="button" value="Input Button"&gt;&lt;/input&gt;
+&lt;input class="button" type="button" value="Input Button"&gt;&lt;/input&gt;
 
 &lt;!-- Submit Button --&gt;
-&lt;input type="submit" value="Submit Button"&gt;&lt;/input&gt;
+&lt;input class="button" type="submit" value="Submit Button"&gt;&lt;/input&gt;
 
 &lt;!-- Reset Button --&gt;
-&lt;input type="reset" value="Reset Button"&gt;&lt;/input&gt;
+&lt;input class="button" type="reset" value="Reset Button"&gt;&lt;/input&gt;
           </code></pre>
           <p><strong>Example:</strong></p>
           <!-- Anchor button -->
@@ -404,11 +408,11 @@
           <!-- Button -->
           <button>Button</button>
           <!-- Input Button -->
-          <input type="button" value="Input Button"></input>
+          <input class="button" type="button" value="Input Button"></input>
           <!-- Submit Button -->
-          <input type="submit" value="Submit Button"></input>
+          <input class="button" type="submit" value="Submit Button"></input>
           <!-- Reset Button -->
-          <input type="reset" value="Reset Button"></input>
+          <input class="button" type="reset" value="Reset Button"></input>
         </section> <!-- /#button-default -->
 
         <section id="button-sizes">
@@ -446,11 +450,11 @@
 &lt;!-- Standard Button --&gt;
 &lt;a href="#" class="button"&gt;Standard Button&lt;/a&gt;
 
-&lt;!-- Gray Button --&gt;
-&lt;a href="#" class="button bg-gray"&gt;Gray Button&lt;/a&gt;
-
 &lt;!-- Primary Button --&gt;
 &lt;a href="#" class="button bg-primary"&gt;Primary Button&lt;/a&gt;
+
+&lt;!-- Info Button --&gt;
+&lt;a href="#" class="button bg-info"&gt;Info Button&lt;/a&gt;
 
 &lt;!-- Sucess Button --&gt;
 &lt;a href="#" class="button bg-success"&gt;Success Button&lt;/a&gt;
@@ -464,10 +468,10 @@
           <p><strong>Example:</strong></p>
           <!-- Standard Button -->
           <a href="#" class="button">Standard Button</a>
-          <!-- Gray Button -->
-          <a href="#" class="button bg-gray">Gray Button</a>
           <!-- Primary Button -->
           <a href="#" class="button bg-primary">Primary Button</a>
+          <!-- Info Button -->
+          <a href="#" class="button bg-info">Info Button</a>
           <!-- Sucess Button -->
           <a href="#" class="button bg-success">Success Button</a>
           <!-- Warning Button -->
@@ -887,14 +891,55 @@ function hello {
                 </tbody>
               </table>
             </div>
-          </section>
-
+          </section> <!-- /#table-scrollable -->
       </section> <!-- /#table -->
+
+      <section id="form">
+        <h2 class="sub-heading">Form</h2>
+        <p>Some words about forms.</p>
+
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment"></textarea>
+
+          <input class="button bg-primary" type="submit" value="Submit">
+        </form>
+      </section> <!-- /#form -->
+
+      <section id="link">
+        <h2 class="sub-heading">Link</h2>
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_decoration.sass">link module</a>
+          provides some support for link decoration. Anchor Links
+          <code>&lt;a href="#..."&gt;</code> will be decorated with a leading "#".
+          External Links on the other hand <code>&lt;a href="http(s)://..."&gt;</code>
+          will be decorated with a trailing arrow to indicate, that an external
+          website will be opened.
+        </p>
+        <pre><code>
+&lt;a href="#internal"&gt;Anchor on the same page&lt;/a&gt;
+&lt;a href="https://duckduckgo.com"&gt;Link to duckduckgo&lt;/a&gt;
+        </code></pre>
+        <p><strong>Example:</strong></p>
+        <p><a href="#internal">Anchor on the same page</a></p>
+        <p><a href="https://duckduckgo.com">Link to duckduckgo</a></p>        
+      </section> <!-- /#link -->
 
       <section id="decoration">
         <h2 class="sub-heading">Decoration</h2>
-        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_decoration.sass">decoration module</a> provides some handy classes
-          to decorate your page.
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_decoration.sass">decoration module</a>
+          provides some handy classes to decorate your page.
         </p>
 
         <section id="decoration-colors">
@@ -933,6 +978,50 @@ function hello {
         </section>
 
       </section> <!-- /#decoration -->
+
+      <section id="utility">
+        <h2 class="sub-heaing">Utility</h2>
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_utility.sass">utility module</a>
+          provides some little helpers.</p>
+
+          <section id="utility-float">
+            <h3>Float and Clearfix</h3>
+            <p>Floating content left or right is a very common scenario.</p>
+            <pre><code>
+&lt;p&gt;Not floating&lt;/p&gt;
+&lt;div class="clearfix"&gt;
+  &lt;p class="float-left"&gt;Left floating&lt;/p&gt;
+  &lt;p class="float-right"&gt;Right floating&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Not floating&lt;/p&gt;
+
+            </code></pre>
+            <p><strong>Example:</strong></p>
+            <p>Not floating</p>
+            <div class="clearfix">
+              <p class="float-left bg-info">Left floating</p>
+              <p class="float-right bg-success">Right floating</p>
+            </div>
+            <p>Not floating</p>
+          </section> <!-- /#utility-float -->
+
+          <section id="utility-hidden">
+            <h3>Hidden / Visible Elements</h3>
+            <p>Sometimes, it can be handy to make elements visible for larger
+              devices only.</p>
+              <pre><code>
+&lt;p&gt;Always visble&lt;/p&gt;
+&lt;p class="visible-sm"&gt;Visible on large phones and above&lt;/p&gt;
+&lt;p class="visible-md"&gt;Visible on tablets and above&lt;/p&gt;
+&lt;p class="visible-lg"&gt;Visible on desktops and notebooks&lt;/p&gt;
+              </code></pre>
+              <p><strong>Example:</strong></p>
+              <p class="bg-info">Always visble</p>
+              <p class="bg-warning visible-sm">Visible on larger phones and larger</p>
+              <p class="bg-success visible-md">Visible on tablets and larger</p>
+              <p class="bg-alert visible-lg">Visible on desktops and notebooks</p>
+          </section> <!-- /#utility-hidden -->
+      </section> <!-- /#utility -->
     </section> <!-- /#modules -->
 
     <section id="customization" class="container">
@@ -968,8 +1057,8 @@ function hello {
 @import 'modules/utility';
         </code></pre>
         <p>After editing the file, you can use the
-          <a href="https://sass-lang.com/">sass compiler to generate your
-          new style-cheat.css</a>.
+          <a href="https://sass-lang.com/">sass compiler</a> to generate your
+          new style-cheat.css.
         </p>
         <pre><code>
 &lt;-- Generate CSS --&gt;
@@ -1016,6 +1105,7 @@ sass src/style-cheat.sass dist/style-cheat.min.css --style=compressed
         <div class="col">
           <div class="box">
             <h5 class="section-heading">Information</h5>
+            <p>Github: <a href="https://github.com/style-cheat">github.com/style-cheat</a> </p>
             <p>Contact: <a href="mailto: hello@style-cheat.io">hello@style-cheat.io</a></p>
             <p>Copyright: 2019 <a href="https://style-cheat.io">style-cheat.io</a></p>
           </div>
@@ -1023,17 +1113,16 @@ sass src/style-cheat.sass dist/style-cheat.min.css --style=compressed
         <div class="col">
           <div class="box">
             <h5 class="section-heading">Partners</h5>
-            <ul class="list-unstyled">
-              <li><a href="https://while-true-do.io">while-true-do.io</a></li>
-              <li><a href="https://kudos-txt.io">kudos-txt.io</a></li>
-            </ul>
+            <p>Community: <a href="https://while-true-do.io">while-true-do.io</a></p>
+            <p>Gratitude: <a href="https://kudos-txt.io">kudos-txt.io</a></p>
           </div>
         </div>
       </div> <!-- /.row -->
       <div class="row">
         <div class="col">
           <div class="box">
-            <p>Made with <span class="fg-alert">♥</span> and <a href="https://style-cheat.io">Style-Cheat (CSS)</a></p>
+            <hr>
+            <p>Made with <span class="fg-alert">♥</span> and <a href="https://style-cheat.io">Style-Cheat (CSS)</a>.</p>
           </div>
         </div>
       </div> <!-- /.row -->

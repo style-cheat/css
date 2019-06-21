@@ -1,6 +1,49 @@
 // Variables for form
 
 // Components for form
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
+textarea,
+select
+  background-color: transparent
+  border-color: $gray
+  border-radius: $b-radius
+  border-style: solid
+  border-width: $b-width
+  box-shadow: none
+  box-sizing: border-box
+  height: 2.5rem
+  width: 100%
+
+  &:focus
+    border-color: darken($brand-primary, 20%)
+    outline: 0
+
+textarea
+  min-height: 5rem
+
+label,
+legend
+  display: block
+  font-weight: bold
+  margin-bottom: .5rem
+
+fieldset,
+input,
+select,
+textarea
+  margin-bottom: 1rem
 
 // Media Query Break Points
 // Large Phones

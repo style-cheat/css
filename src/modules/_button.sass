@@ -2,43 +2,42 @@ $button-padding: .5rem
 
 // Components for button
 .button,
-button,
-input[type='submit'],
-input[type='reset'],
-input[type='button']
+button
   background-color: $light
-  border-color: darken($light, 10%)
-  border-radius: .25rem
+  border-color: darken($light, 20%)
+  border-radius: $b-radius
   border-style: solid
-  border-width: 1px
+  border-width: $b-width
   box-sizing: border-box
   color: $dark
   cursor: pointer
   display: inline-block
   font-family: inherit
   font-size: inherit
-  line-height: inherit
-  padding-bottom: $button-padding
+  height: 2.5rem
+  line-height: 2.5rem
+  margin-bottom: .5rem
+  padding-bottom: 0
   padding-left: $button-padding
   padding-right: $button-padding
-  padding-top: $button-padding
+  padding-top: 0
   text-align: center
   text-decoration: none
   white-space: nowrap
 
   &.button-sm
     font-size: smaller
-    padding-bottom: .1rem
-    padding-left: .1rem
-    padding-right: .1rem
-    padding-top: .1rem
+    height: 2rem
+    line-height: 2rem
+    padding-left: $button-padding / 2
+    padding-right: $button-padding / 2
 
   &.button-lg
     font-size: larger
-    padding-bottom: .75rem
-    padding-left: .75rem
-    padding-right: .75rem
-    padding-top: .75rem
+    height: 3rem
+    line-height: 3rem
+    padding-left: $button-padding * 1.5
+    padding-right: $button-padding * 1.5
 
 // Media Query Break Points
 // Large Phones

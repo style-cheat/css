@@ -2,10 +2,40 @@
 
 // Components for utility
 
+.float-left
+  float: left
+
+.float-right
+  float: right
+
+.clearfix
+
+  &::after
+    clear: both
+    content: ' '
+    display: table
+
+.visible-sm,
+.visible-md,
+.visible-lg
+  display: none
+  visibility: collapse
+
 // Media Query Break Points
 // Large Phones
 @media only screen and (min-width: $sm)
+  .visible-sm
+    display: block
+    visibility: visible
+
 // Tablets
 @media only screen and (min-width: $md)
+  .visible-md
+    display: block
+    visibility: visible
+
 // Notebooks and Desktops
 @media only screen and (min-width: $lg)
+  .visible-lg
+    display: block
+    visibility: visible
