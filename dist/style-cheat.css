@@ -231,6 +231,7 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   height: 2.5rem;
+  padding: 0.5rem;
   width: 100%;
 }
 input[type=email]:focus,
@@ -253,7 +254,8 @@ select:focus {
 }
 
 textarea {
-  min-height: 5rem;
+  font-size: 1rem;
+  min-height: 6rem;
 }
 
 label,

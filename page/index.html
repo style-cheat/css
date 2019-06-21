@@ -896,8 +896,32 @@ function hello {
 
       <section id="form">
         <h2 class="sub-heading">Form</h2>
-        <p>Some words about forms.</p>
+        <p>The <a href="https://github.com/style-cheat/css/blob/master/src/modules/_decoration.sass">link module</a>
+          is adding some styling to forms to make them easier to setup and more
+          usable on mobile devices.
+        </p>
+        <pre><code>
+&lt;form&gt;
+  &lt;label for="fname"&gt;First Name&lt;/label&gt;
+  &lt;input type="text" id="fname" name="firstname" placeholder="Your name.."&gt;
 
+  &lt;label for="lname"&gt;Last Name&lt;/label&gt;
+  &lt;input type="text" id="lname" name="lastname" placeholder="Your last name.."&gt;
+
+  &lt;label for="country"&gt;Country&lt;/label&gt;
+  &lt;select id="country" name="country"&gt;
+    &lt;option value="australia"&gt;Australia&lt;/option&gt;
+    &lt;option value="canada"&gt;Canada&lt;/option&gt;
+    &lt;option value="usa"&gt;USA&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;label for="comment"&gt;Comment&lt;/label&gt;
+  &lt;textarea id="comment" name="comment"&gt;&lt;/textarea&gt;
+
+  &lt;input class="button bg-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+        </code></pre>
+
+        <p><strong>Example:</strong></p>
         <form>
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -931,9 +955,10 @@ function hello {
 &lt;a href="#internal"&gt;Anchor on the same page&lt;/a&gt;
 &lt;a href="https://duckduckgo.com"&gt;Link to duckduckgo&lt;/a&gt;
         </code></pre>
+
         <p><strong>Example:</strong></p>
         <p><a href="#internal">Anchor on the same page</a></p>
-        <p><a href="https://duckduckgo.com">Link to duckduckgo</a></p>        
+        <p><a href="https://duckduckgo.com">Link to duckduckgo</a></p>
       </section> <!-- /#link -->
 
       <section id="decoration">
@@ -1039,22 +1064,23 @@ function hello {
         </p>
         <pre><code>
 // main
-@import 'main/base';
+@import 'main/base'
 
 // modules
-@import 'modules/button';
-@import 'modules/code';
-@import 'modules/container';
-@import 'modules/decoration';
-@import 'modules/figure';
-@import 'modules/form';
-@import 'modules/grid';
-@import 'modules/list';
-@import 'modules/quote';
-@import 'modules/table';
-@import 'modules/text';
-@import 'modules/typography';
-@import 'modules/utility';
+@import 'modules/button'
+@import 'modules/code'
+@import 'modules/container'
+@import 'modules/decoration'
+// @import 'modules/figure'
+@import 'modules/link'
+@import 'modules/form'
+@import 'modules/grid'
+@import 'modules/list'
+@import 'modules/quote'
+@import 'modules/table'
+@import 'modules/text'
+@import 'modules/typography'
+@import 'modules/utility'
         </code></pre>
         <p>After editing the file, you can use the
           <a href="https://sass-lang.com/">sass compiler</a> to generate your
