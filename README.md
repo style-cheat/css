@@ -11,6 +11,8 @@ license: BSD-3-Clause
 [![Github (license)](https://img.shields.io/github/license/style-cheat/css.svg)](https://github.com/style-cheat/css/blob/master/LICENSE)
 [![Github (issues)](https://img.shields.io/github/issues/style-cheat/css.svg)](https://github.com/style-cheat/css/issues)
 [![Github (pull requests)](https://img.shields.io/github/issues-pr/style-cheat/css.svg)](https://github.com/style-cheat/css/pulls)
+<!-- travis shields -->
+[![Travis (com)](https://img.shields.io/travis/com/style-cheat/css.svg)](https://travis-ci.com/style-cheat/css)
 
 # Style-Cheat (CSS)
 
