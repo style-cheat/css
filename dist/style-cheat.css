@@ -11,8 +11,8 @@ body {
 
 .button,
 button {
-  background-color: #e8e7e5;
-  border-color: #b8b5af;
+  background-color: #f8f7f5;
+  border-color: #cec7b9;
   border-radius: 0.25rem;
   border-style: solid;
   border-width: 1px;
@@ -51,7 +51,7 @@ button.button-lg {
 }
 
 code {
-  background-color: #e8e7e5;
+  background-color: #f8f7f5;
   border-radius: 0.25rem;
   padding-bottom: 0.2rem;
   padding-left: 0.4rem;
@@ -62,7 +62,7 @@ code {
 kbd {
   background-color: #313131;
   border-radius: 0.25rem;
-  color: #e8e7e5;
+  color: #f8f7f5;
   padding-bottom: 0.2rem;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
@@ -70,7 +70,7 @@ kbd {
 }
 
 pre {
-  background-color: #e8e7e5;
+  background-color: #f8f7f5;
   border-left-color: #313131;
   border-left-style: solid;
   border-left-width: 0.3rem;
@@ -86,7 +86,7 @@ pre code {
 }
 
 var {
-  background-color: #e8e7e5;
+  background-color: #f8f7f5;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
 }
@@ -127,8 +127,8 @@ samp {
 }
 
 .bg-light {
-  background-color: #e8e7e5;
-  border-color: #b8b5af;
+  background-color: #f8f7f5;
+  border-color: #cec7b9;
 }
 
 .bg-primary {
@@ -165,7 +165,7 @@ samp {
 }
 
 .fg-light {
-  color: #e8e7e5;
+  color: #f8f7f5;
 }
 
 .fg-primary {
@@ -333,7 +333,7 @@ dd {
 }
 
 blockquote {
-  border-left-color: #777;
+  border-left-color: #313131;
   border-left-style: solid;
   border-left-width: 0.3rem;
   margin: 0;
@@ -353,14 +353,14 @@ blockquote footer::before {
   width: 100%;
 }
 .table thead th {
-  border-bottom-color: #e8e7e5;
+  border-bottom-color: #f8f7f5;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-top-width: 1px;
 }
 .table th,
 .table td {
-  border-top-color: #e8e7e5;
+  border-top-color: #f8f7f5;
   border-top-style: solid;
   border-top-width: 1px;
   padding: 0.75rem;
@@ -368,10 +368,10 @@ blockquote footer::before {
 }
 
 .table-striped thead {
-  background-color: #e8e7e5;
+  background-color: #f8f7f5;
 }
 .table-striped tr:nth-child(even) {
-  background-color: #e8e7e5;
+  background-color: #f8f7f5;
 }
 
 .table-scrollable {
