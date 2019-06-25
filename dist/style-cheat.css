@@ -136,12 +136,12 @@ samp {
 }
 
 .bg-primary {
-  background-color: #5cace2;
-  border-color: #217bb7;
+  background-color: #6cb4e4;
+  border-color: #2485c6;
 }
 
 .bg-success {
-  background-color: #29B764;
+  background-color: #29b764;
   border-color: #166436;
 }
 
@@ -168,11 +168,11 @@ samp {
 }
 
 .fg-primary {
-  color: #5cace2;
+  color: #6cb4e4;
 }
 
 .fg-success {
-  color: #29B764;
+  color: #29b764;
 }
 
 .fg-warning {
@@ -242,7 +242,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 textarea:focus,
 select:focus {
-  border-color: #5cace2;
+  border-color: #6cb4e4;
 }
 
 textarea {
