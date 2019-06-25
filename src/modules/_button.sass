@@ -2,6 +2,8 @@ $button-padding: .5rem
 
 // Components for button
 .button,
+.button-sm,
+.button-lg,
 button
   background-color: $light
   border-color: darken($light, 20%)
@@ -9,35 +11,34 @@ button
   border-style: solid
   border-width: $b-width
   box-sizing: border-box
-  color: $dark
   cursor: pointer
   display: inline-block
-  font-family: inherit
-  font-size: inherit
-  height: 2.5rem
-  line-height: 2.5rem
   margin-bottom: .5rem
-  padding-bottom: 0
-  padding-left: $button-padding
-  padding-right: $button-padding
-  padding-top: 0
   text-align: center
   text-decoration: none
   white-space: nowrap
 
-  &.button-sm
-    font-size: smaller
-    height: 2rem
-    line-height: 2rem
-    padding-left: $button-padding / 2
-    padding-right: $button-padding / 2
+.button,
+button
+  height: 2.5rem
+  line-height: 2.5rem
+  padding-left: $button-padding
+  padding-right: $button-padding
 
-  &.button-lg
-    font-size: larger
-    height: 3rem
-    line-height: 3rem
-    padding-left: $button-padding * 1.5
-    padding-right: $button-padding * 1.5
+
+.button-sm
+  font-size: smaller
+  height: 2rem
+  line-height: 2rem
+  padding-left: $button-padding / 2
+  padding-right: $button-padding / 2
+
+.button-lg
+  font-size: larger
+  height: 3rem
+  line-height: 3rem
+  padding-left: $button-padding * 1.5
+  padding-right: $button-padding * 1.5
 
 // Media Query Break Points
 // Large Phones

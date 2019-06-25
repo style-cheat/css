@@ -2,18 +2,14 @@
 
 
 // Components for link
-
 a
   color: $dark
   text-decoration-style: dotted
 
-a[href*='//']:not([class~='button'])
-  &::after
-    content: '\2197'
+  &:hover,
+  &:focus
+    color: $gray
 
-a[href*='#']:not([class~='button'])
-  &::before
-    content: '#'
 // Media Query Break Points
 // Large Phones
 @media only screen and (min-width: $sm)

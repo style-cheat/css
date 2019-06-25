@@ -25,43 +25,29 @@ CSS Framework".
 
 ## Description
 
-Style-Cheat CSS is a CSS Framework written in SASS.
-
-## Principles
-
-**Modularity**  is the first principle of
-  "Style-Cheat CSS". You can enable what you need and disable, what you
-  don't like.
-
-**Minimalism** is the second principle. "Style-Cheat CSS"
-  is only x.ykb (x.ykb gzipped), including all modules. This will result
-  in faster loading times of your website and a better overall performance.
-
-**Modern** development is the third principle.
-  "Style-Cheat CSS" is applying paradigms like mobile-first,
-  responsive design or flexbox.
-
-**Multi Purpose** design is the fourth principle.
-  "Style-Cheat CSS" is following an approach to be usable for many and
-  tunable. It can be used for blogs, personal pages, wikis or anything
-  else.
+You always wanted to cheat a bit, when developing your website?
+"Style-Cheat CSS" provides the code you need. The framework is very minimal per
+design to reduce loading times (only 6kb, <2kb compressed). Modularity will
+allow you, to bring only the tools, you really need. Disable everything else!
+Mobile First and Responsive Elements will ensure that your website fits for all
+modern devices. The code is also easy to learn, so you can focus on your website
+and not on the framework.
 
 ## Installation
 
-### Using a CDN
+### Download
 
-You can get started with using the CDN option. Just add the below code to your
-`head` section.
+You can also download the latest release from
+[here](https://github.com/style-cheat/css/releases).
+
+### Use a CDN
+
+Style-Cheat CSS is available at jsdelivr CDN.
 
 ```
 <!-- Use Style-Cheat CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css/dist/style-cheat.css" />
 ```
-
-### Download the release
-
-You can also download the latest release from
-[here](https://github.com/style-cheat/css/releases).
 
 ## Testing
 

@@ -2,26 +2,21 @@
 
 // Components for table
 
-.table
-  background-color: transparent
+.table,
+.table-striped
   border-collapse: collapse
   margin-bottom: 1rem
   max-width: 100%
   width: 100%
 
-  thead
-    th
-      border-bottom-color: $light
-      border-bottom-style: solid
-      border-bottom-width: 1px
-      border-top-width: 1px
-
-  th,
-  td
+  tr
     border-top-color: $light
     border-top-style: solid
     border-top-width: 1px
-    padding: .75rem
+
+  th,
+  td
+    padding: .5rem
     text-align: inherit
 
 .table-striped
@@ -31,11 +26,6 @@
   tr
     &:nth-child(even)
       background-color: $light
-
-.table-scrollable
-  margin: 0
-  overflow-y: auto
-  width: 100%
 
 // Media Query Break Points
 // Large Phones
