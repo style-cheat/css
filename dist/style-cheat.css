@@ -136,18 +136,13 @@ samp {
 }
 
 .bg-primary {
-  background-color: #2ee2be;
-  border-color: #15957c;
-}
-
-.bg-info {
   background-color: #5cace2;
   border-color: #217bb7;
 }
 
 .bg-success {
-  background-color: #2ecc71;
-  border-color: #1b7943;
+  background-color: #29B764;
+  border-color: #166436;
 }
 
 .bg-warning {
@@ -173,15 +168,11 @@ samp {
 }
 
 .fg-primary {
-  color: #2ee2be;
-}
-
-.fg-info {
   color: #5cace2;
 }
 
 .fg-success {
-  color: #2ecc71;
+  color: #29B764;
 }
 
 .fg-warning {
@@ -251,7 +242,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 textarea:focus,
 select:focus {
-  border-color: #2ee2be;
+  border-color: #5cace2;
 }
 
 textarea {
