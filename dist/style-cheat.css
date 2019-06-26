@@ -193,7 +193,7 @@ hr {
 }
 
 a {
-  color: #2c3e50;
+  color: inherit;
   text-decoration-style: dotted;
 }
 a:hover, a:focus {
