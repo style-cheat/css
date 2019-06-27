@@ -13,6 +13,8 @@ license: BSD-3-Clause
 [![Github (pull requests)](https://img.shields.io/github/issues-pr/style-cheat/css.svg)](https://github.com/style-cheat/css/pulls)
 <!-- travis shields -->
 [![Travis (com)](https://img.shields.io/travis/com/style-cheat/css.svg)](https://travis-ci.com/style-cheat/css)
+<!-- cdn shields -->
+[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/style-cheat/css.svg)](https://cdn.jsdelivr.net/gh/style-cheat/css@1.0/dist/style-cheat.css)
 
 # Style-Cheat (CSS)
 
@@ -46,7 +48,10 @@ Style-Cheat CSS is available at jsdelivr CDN.
 
 ```
 <!-- Use Style-Cheat CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css/dist/style-cheat.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css@1.0/dist/style-cheat.css" />
+
+<!-- Use Style-Cheat CSS (minified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css@1.0/dist/style-cheat.min.css" />
 ```
 
 ## Testing
