@@ -8,6 +8,9 @@ body {
   margin: 0;
 }
 
+input[type=submit],
+input[type=reset],
+input[type=button],
 .button,
 .button-sm,
 .button-lg,
