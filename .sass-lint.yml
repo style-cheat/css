@@ -1,7 +1,8 @@
 ---
 rules:
-  placeholder-in-extend: false
+  force-attribute-nesting: false
+  force-pseudo-nesting: false
   no-qualifying-elements:
     allow-element-with-attribute: true
-  force-pseudo-nesting: false
-  force-attribute-nesting: false
+  no-vendor-prefixes: false
+  placeholder-in-extend: false
