@@ -15,6 +15,8 @@ input[type=button],
 .button-sm,
 .button-lg,
 button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   background-color: #ecf0f1;
   border-color: #b1c2c6;
@@ -219,6 +221,8 @@ input[type=datetime],
 input[type=datetime-local],
 textarea,
 select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   border-color: #95a5a6;
