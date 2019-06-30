@@ -14,7 +14,7 @@ license: BSD-3-Clause
 <!-- travis shields -->
 [![Travis (com)](https://img.shields.io/travis/com/style-cheat/css.svg)](https://travis-ci.com/style-cheat/css)
 <!-- cdn shields -->
-[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/style-cheat/css.svg)](https://cdn.jsdelivr.net/gh/style-cheat/css@1.0/dist/style-cheat.css)
+[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/style-cheat/css.svg)](https://www.jsdelivr.com/package/gh/style-cheat/css)
 
 # Style-Cheat (CSS)
 
